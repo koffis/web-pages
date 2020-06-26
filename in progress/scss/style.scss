@@ -1,0 +1,45 @@
+@import '_null_style';
+
+$fz:60px;
+
+.tplborder{
+    border-bottom: 5px dashed red
+}
+
+@mixin fontz($f) {
+    font-size: $f;
+}
+
+.block{
+    width: 300px / 960px * 100%;
+    background-color: skyblue;
+    padding: 30px;
+    line-height: 60px;
+    .block__text{
+        font-size: $fz;
+        span{
+            color: green;
+        }
+    }
+    &.block--big{
+       font-size: $fz; 
+    }
+}
+.link{
+    color: blue;
+    text-decoration: underline;
+    font-size: $fz;
+    .block & {
+        font-size: $fz;
+    }
+
+    &:hover{
+        color:green;
+    }
+    @extend .tplborder
+}
+
+.link-2{
+    @include fontz(100px);
+    @extend .tplborder
+}
