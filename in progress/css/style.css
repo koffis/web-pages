@@ -155,5 +155,12 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 3.52px;
-  margin: 0px 0px 40px 0px;
+  margin: 35px 0px 35px 0px;
+}
+
+.item-about__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
 }
