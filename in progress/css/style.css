@@ -73,94 +73,46 @@ body {
   font-family: Lato;
 }
 
-.about__body {
-  max-width: 823px;
-  margin: 0px auto;
-}
-
-.about__header {
-  margin: 0px 0px 65px 0px;
-}
-
-.about__title {
-  margin: 0px 0px 30px 0px;
-}
-
-.about__text {
-  max-width: 688px;
-  color: #868585;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 25.89px;
-  margin: 0px auto;
-}
-
-.about__row {
+.block__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0;
-  margin: 0px -15px;
-}
-
-.about__column {
-  padding: 0px 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333%;
-          flex: 0 0 33.333%;
-}
-
-.title {
-  font-size: 34px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 8.95px;
-  position: relative;
-  text-align: center;
-  padding: 0px 0px 30px 0px;
-}
-
-.title::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  bottom: 0;
-  height: 1px;
-  left: 50%;
-  background-color: #000;
-  margin: 0px 0px 0px -25px;
-}
-
-.item-about__icon img {
-  margin: 0px auto;
-  border-radius: 50%;
-  width: 92px;
-  height: 92px;
-  border: 2px solid #f1f1f1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border: 20px solid #ece89d;
+  margin: 0px 0px 20px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.item-about__title {
-  text-align: center;
-  color: #000;
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 3.52px;
-  margin: 35px 0px 35px 0px;
+.block_column {
+  border: 20px solid #5e5373;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
-.item-about__text {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 26px;
+.block_column_1 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.block_column_2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.block_column_3 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.block_item {
+  background-color: #18b5a4;
+  padding: 50px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
 }
